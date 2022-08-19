@@ -9,6 +9,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.typekit.net/huf0mku.css" />
   </head>
+
+  <script type="text/javascript">
+
+    var doRelocation = function() {
+        
+        var currentWidth = window.innerWidth,
+            breakpoint = 800,
+            newLocation = 'mobile.html';
+    
+        if (currentWidth < breakpoint) {
+            window.location.replace(newLocation);
+        }
+    
+    }
+        doRelocation();
+        
+        window.addEventListener('resize', doRelocation);
+        
+        </script>
   <body>
     <header>
       <!-- Navigation Bar Starts -->
